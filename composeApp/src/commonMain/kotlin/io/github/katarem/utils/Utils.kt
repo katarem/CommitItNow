@@ -1,5 +1,6 @@
 package io.github.katarem.utils
 
+import androidx.compose.ui.graphics.Color
 import com.russhwolf.settings.Settings
 import com.russhwolf.settings.set
 import commititnow.composeapp.generated.resources.Res
@@ -55,3 +56,5 @@ fun resolveFirstScreen(): String{
 }
 
 const val QUACK_SOUND = "files/quack.wav"
+val PRIMARY_COLOR = Color(255, 128, 0)
+val SECONDARY_COLOR = Color.White

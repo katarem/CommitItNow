@@ -24,10 +24,12 @@ fun Router(){
         topBar = { TopBar() },
         bottomBar = { BottomBar() }
     ){ paddingValues ->
-        NavHost(navController = navigator, startDestination = resolveFirstScreen(),
+        NavHost(navController = navigator,
+            //startDestination = resolveFirstScreen(),
+            startDestination = Routes.WELCOME_SCREEN.name,
             modifier = Modifier.padding(paddingValues)){
             composable(Routes.WELCOME_SCREEN.name){
-                WelcomeScreen()
+                WelcomeScreen(navController = navigator)
             }
             composable(Routes.MAIN_SCREEN.name){
                 MainScreen(
