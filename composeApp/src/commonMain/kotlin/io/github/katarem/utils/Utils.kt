@@ -2,7 +2,9 @@ package io.github.katarem.utils
 
 import com.russhwolf.settings.Settings
 import com.russhwolf.settings.set
+import commititnow.composeapp.generated.resources.Res
 import io.github.katarem.routing.Routes
+import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 object UserPreferences{
     private val settings = Settings()
@@ -51,3 +53,5 @@ fun resolveFirstScreen(): String{
     } else
         Routes.MAIN_SCREEN.name
 }
+
+const val QUACK_SOUND = "files/quack.wav"

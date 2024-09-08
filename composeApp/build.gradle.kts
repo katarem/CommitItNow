@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    //alias(libs.plugins.compose.resources)
 }
 
 kotlin {
@@ -51,6 +52,9 @@ kotlin {
             implementation(libs.multiplatform.settings)
             implementation(libs.kotlinx.datetime)
             implementation(libs.emojis)
+            implementation(libs.sounds)
+            //implementation(libs.multiplatform.resources)
+            //implementation(libs.multiplatform.compose)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -58,6 +62,7 @@ kotlin {
         }
     }
 }
+
 
 android {
     namespace = "io.github.katarem"
